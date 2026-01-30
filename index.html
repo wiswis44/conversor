@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Divisas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="conversor-divisas">
+    <h2>Conversor de Divisas</h2>
+
+    <div class="fila-divisas">
+
+      <div class="caja-divisa">
+        <label for="monedaOrigen">De</label>
+        <div class="grupo-entrada">
+          <input type="number" id="cantidadOrigen" placeholder="Cantidad" min="0">
+          <select id="monedaOrigen">
+            <option value="EUR">EUR - Euro</option>
+            <option value="USD">USD - Dólar USA</option>
+            <option value="GBP">GBP - Libra</option>
+            <option value="JPY">JPY - Yen</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="caja-divisa">
+        <label for="monedaDestino">A</label>
+        <div class="grupo-entrada">
+          <input type="text" id="cantidadResultado" value="0.00" readonly>
+          <select id="monedaDestino">
+            <option value="USD">USD - Dólar USA</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - Libra</option>
+            <option value="JPY">JPY - Yen</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="boton-convertir">Convertir</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
