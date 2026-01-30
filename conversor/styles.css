@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: url(https://images.pexels.com/photos/5466789/pexels-photo-5466789.jpeg?cs=srgb&dl=pexels-olia-danilevich-5466789.jpg&fm=jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.conversor-divisas {
+  padding: 2rem;
+  border-radius: 20px;
+  border: 2px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(15px);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.fila-divisas {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.caja-divisa {
+  flex: 1;
+  text-align: left;
+}
+
+.grupo-entrada {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input, select {
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #eee;
+  transition: all 0.3s ease; 
+}
+
+.boton-convertir {
+  background: rgba(255, 255, 255, 0.8);
+  color: rgb(5, 4, 4);
+  border: none;
+  border-radius: 30px;
+  padding: 14px;
+  width: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease; 
+}
+
+.boton-convertir:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#cantidadResultado {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  .fila-divisas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
